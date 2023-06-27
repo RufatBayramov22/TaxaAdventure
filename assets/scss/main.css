@@ -1,0 +1,2761 @@
+/*google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.contanier {
+  width: 89%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/*start header*/
+.header {
+  position: fixed;
+  width: 100%;
+  height: 11%;
+  background-color: #000;
+  z-index: 9999;
+}
+.header .contanier .navBar {
+  display: flex;
+}
+.header .contanier .navBar a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 16px;
+  font-size: 20px;
+  line-height: inherit;
+}
+.header .contanier .navBar .navList {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 15%;
+}
+.header .contanier .navBar .navList .navItem {
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  padding: 20px 0;
+  margin-right: 45px;
+  text-transform: uppercase;
+}
+.header .contanier .navBar .navList .navItem:hover {
+  color: #ff2f8b;
+}
+.header .contanier .navBar .navList .navItem:hover .dropDown {
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
+.header .contanier .navBar .navList .navItem a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  padding: 20px 0;
+}
+.header .contanier .navBar .navList .navItem a:hover {
+  color: #ff2f8b;
+}
+.header .contanier .navBar .navList .navItem .activepage {
+  color: #ff2f8b;
+}
+.header .contanier .navBar .navList .navItem .dropDown {
+  position: absolute;
+  top: 120px;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid black;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+.header .contanier .navBar .navList .navItem .dropDown .dropItem {
+  display: block;
+  float: none;
+  margin-right: 0px;
+  border-bottom: 1px solid #ededed;
+  margin-left: 0px;
+  transition: all 0.4s linear;
+}
+.header .contanier .navBar .navList .navItem .dropDown .dropItem:hover {
+  background-color: #ff2f8b;
+}
+.header .contanier .navBar .navList .navItem .dropDown .dropItem a {
+  text-align: left;
+  color: #000;
+  line-height: 45px;
+  padding: 0px 30px;
+  transition: all 150ms linear;
+  display: block;
+  margin-right: 0px;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+.header .contanier .navBar .navListbtn {
+  margin-top: 15px;
+  margin-left: auto;
+}
+.header .contanier .navBar .navListbtn .navItembtn .btn {
+  border: 1px solid #ffffff;
+  padding: 7px 28px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header .contanier .navBar .navListbtn .navItembtn .btn:hover {
+  color: #ff2f8b;
+  border-color: #ff2f8b;
+  transition: 0.3s ease-in-out;
+}
+.header .contanier .navBar .navListbtn .navItembtn a .search {
+  margin-left: 10px;
+  font-weight: 600;
+  color: #fff;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.header .contanier .navBar .navListbtn .navItembtn a .search:hover {
+  color: #ff2f8b;
+  transition: 0.3s ease-in-out;
+}
+
+/*end header*/
+/*start media*/
+@media (max-width: 992px) {
+  .header {
+    width: 100%;
+  }
+  .header .contanier {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .header .contanier .navBar .navList {
+    display: none;
+  }
+  .header .contanier .navBar .navListbtn {
+    display: none;
+  }
+}
+/*end media*/
+/*start media 768px*/
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header .contanier {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .header .contanier .navBar .navList {
+    display: none;
+  }
+  .header .contanier .navBar .navListbtn {
+    display: none;
+  }
+}
+/*end media 768px*/
+/*start media 576px*/
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  .header .contanier {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .header .contanier .navBar .navList {
+    display: none;
+  }
+  .header .contanier .navBar .navListbtn {
+    display: none;
+  }
+}
+/*end media 576px*/
+/*start home section*/
+.home {
+  background-image: url(../images/homaPage/homebg.png.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 900px;
+}
+.home .contanier .homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 677px;
+  text-align: center;
+}
+.home .contanier .homeContent .infoContent {
+  z-index: 1;
+}
+.home .contanier .homeContent .infoContent p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.home .contanier .homeContent .infoContent h2 {
+  font-size: 120px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/*end home section*/
+/*start packages section*/
+.packages {
+  padding-bottom: 90px;
+  padding-top: 120px;
+}
+.packages .contanier .packagesContent {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.packages .contanier .packagesContent .packagesInfo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.packages .contanier .packagesContent .packagesInfo p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.packages .contanier .packagesContent .packagesInfo h1 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.packages .contanier .packagesContent .packagesInfo span {
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+  background: #dddddd;
+}
+.packages .contanier .box {
+  display: flex;
+  gap: 20px;
+}
+.packages .contanier .box .box1 {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.packages .contanier .box .box1:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.2);
+  transition: all 0.3s ease 0s;
+}
+.packages .contanier .box .box1 h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.packages .contanier .box .box1 p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.packages .contanier .box .box1 a {
+  display: inline-block;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 40px;
+  background-color: transparent;
+}
+.packages .contanier .box .box1 a:hover {
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.3s all ease-in-out;
+}
+.packages .contanier .box .box1 .img1 {
+  background-color: #f7f9fd;
+  padding: 40px;
+}
+
+/*end packages section*/
+/*start adventure section*/
+.adventure {
+  background-image: url(../images/homaPage/sunBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 528px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  padding: 120px 0;
+}
+.adventure .contanier .adventureContent {
+  display: flex;
+}
+.adventure .contanier .adventureContent .infoContent {
+  text-align: center;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.adventure .contanier .adventureContent .infoContent h2 {
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.adventure .contanier .adventureContent .infoContent p {
+  margin-bottom: 16px;
+  margin-left: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+.adventure .contanier .adventureContent .infoContent a {
+  margin-top: 15px;
+  background-color: #000000;
+  line-height: 48px;
+  padding: 0px 38px;
+  color: #ffffff;
+  border: 1px solid #000000;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.adventure .contanier .adventureContent .infoContent a:hover {
+  background-color: transparent;
+  color: #000000;
+  margin-top: 15px;
+  line-height: 48px;
+  padding: 0px 38px;
+  border: 1px solid #000000;
+  letter-spacing: 2px;
+}
+.adventure .contanier .adventureContent .imgContent {
+  position: relative;
+  margin-right: 8.333333%;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.adventure .contanier .adventureContent .imgContent img {
+  position: absolute;
+  top: -70%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+/*end adventure section*/
+/*start trip section*/
+.trip {
+  padding-bottom: 90px;
+  padding-top: 120px;
+  display: block;
+}
+.trip .contanier .tripContent {
+  display: flex;
+  justify-content: center;
+}
+.trip .contanier .tripContent .infocontent {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.trip .contanier .tripContent .infocontent p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  letter-spacing: 1px;
+}
+.trip .contanier .tripContent .infocontent h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.trip .contanier .tripContent .infocontent span {
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background: #dddddd;
+}
+.trip .contanier .box {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.trip .contanier .box .box1 {
+  width: 34%;
+  position: relative;
+  padding: 20px 20px 40px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  transition: all 0.3s ease 0s;
+}
+.trip .contanier .box .box1:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.2);
+}
+.trip .contanier .box .box1:hover img {
+  transform: scale(1.1);
+}
+.trip .contanier .box .box1:hover .date {
+  background: linear-gradient(90deg, #fff098 0%, #f54e71 100%);
+  transition: 0.3s all ease-in-out;
+}
+.trip .contanier .box .box1 img {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  transition: all 0.3s ease 0s;
+  width: 300px;
+  height: 200px;
+}
+.trip .contanier .box .box1 .date {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  padding: 12px 11px;
+  text-align: center;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 13px;
+  transition: all 0.3s ease 0s;
+  background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+}
+.trip .contanier .box .box1 .time {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+}
+.trip .contanier .box .box1 .icon {
+  display: flex;
+}
+.trip .contanier .box .box1 .icon .locate {
+  text-transform: capitalize;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 14px;
+  color: #777777;
+  line-height: 24px;
+}
+.trip .contanier .box .box1 .icon .days {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 14px;
+  color: #777777;
+  line-height: 24px;
+}
+.trip .contanier .box .box1 h4 {
+  margin-bottom: 12px;
+  font-size: 21px;
+  transition: all 0.3s ease 0s;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+.trip .contanier .box .box1 p {
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.trip .contanier .box .box1 a {
+  margin-top: 20px;
+  color: #000000;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.trip .contanier .box .box1 a:hover {
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.3s all ease-in-out;
+}
+
+/*end trip section*/
+/*start places section*/
+.places {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 120px;
+  display: block;
+}
+.places .placesContent {
+  display: flex;
+  justify-content: center;
+}
+.places .placesContent .placesInfo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.places .placesContent .placesInfo p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.places .placesContent .placesInfo h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+}
+.places .placesContent .placesInfo span {
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+  background-color: #dddddd;
+}
+.places .cardBox {
+  width: 100%;
+  display: flex;
+}
+.places .cardBox .card {
+  width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.places .cardBox .card:hover .imgBox::after {
+  opacity: 0.85;
+  visibility: visible;
+}
+.places .cardBox .card:hover .content {
+  transform: translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+}
+.places .cardBox .card .imgBox {
+  width: 100%;
+  position: relative;
+}
+.places .cardBox .card .imgBox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.places .cardBox .card .imgBox img {
+  width: 100%;
+}
+.places .cardBox .card .content {
+  position: absolute;
+  bottom: 0;
+  max-width: 330px;
+  padding: 0px 10px;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  transform: translateY(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.places .cardBox .card .content .text {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.places .cardBox .card .content .info {
+  font-size: 21px;
+  color: #fff;
+}
+
+/*end places section*/
+/*start team section*/
+.team {
+  width: 100%;
+  padding-bottom: 90px;
+  padding-top: 120px;
+  display: block;
+}
+.team .contanier .teamContent {
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.team .contanier .teamContent .teamInfo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.team .contanier .teamContent .teamInfo p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  letter-spacing: 1px;
+}
+.team .contanier .teamContent .teamInfo h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.team .contanier .teamContent .teamInfo span {
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+  background: #dddddd;
+}
+.team .contanier .cardBox {
+  display: flex;
+  gap: 20px;
+}
+.team .contanier .cardBox .box {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.team .contanier .cardBox .box:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 20px 50px rgba(129, 74, 255, 0.2);
+  transition: 0.4s all ease-in-out;
+}
+.team .contanier .cardBox .box:hover .overlay {
+  bottom: 0;
+}
+.team .contanier .cardBox .box img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+}
+.team .contanier .cardBox .box .overlay {
+  width: 68%;
+  height: 32%;
+  background-color: #fff;
+  position: absolute;
+  left: 0%;
+  bottom: -120%;
+  transition: 0.3s all ease 0s;
+  padding: 20px 20px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .contanier .cardBox .box .overlay h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.team .contanier .cardBox .box .overlay p {
+  margin-top: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+
+/*end team section*/
+/*start subscribe section*/
+.subscribe {
+  background-image: url(../images/homaPage/bg2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 120px 0;
+}
+.subscribe .contanier .subscribeContent {
+  display: flex;
+  align-items: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.subscribe .contanier .subscribeContent .subscribeImg {
+  max-width: 41.666667%;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.subscribe .contanier .subscribeContent .subscribeImg img {
+  max-width: 100%;
+  height: auto;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo {
+  max-width: 41.666667%;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 0 0 190px;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo p {
+  margin-bottom: 40px;
+  margin-top: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo .formContent form {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo .formContent form input {
+  background-color: #c251da;
+  border: none;
+  outline: none;
+  border-color: #c251da;
+  line-height: 60px;
+  height: 60px;
+  min-width: 390px;
+  padding: 0 20px;
+  font-size: 16px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo .formContent form button {
+  position: absolute;
+  cursor: pointer;
+  padding: 0px 25px;
+  max-height: 40px;
+  line-height: 39px;
+  top: 10px;
+  border-radius: 0px;
+  right: -25px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*end subscribe section*/
+/*start testimonials section*/
+.testimonials {
+  padding: 120px 0;
+}
+.testimonials .testimonialsContent .testimonialsInfo {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.testimonials .testimonialsContent .testimonialsInfo img {
+  width: auto;
+  margin: auto;
+}
+.testimonials .testimonialsContent .testimonialsInfo h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: -70px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+.testimonials .testimonialsContent .testimonialsInfo .list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.testimonials .testimonialsContent .testimonialsInfo .list .item a {
+  color: #ffc000;
+  font-size: 14px;
+}
+.testimonials .testimonialsContent .testimonialsInfo p {
+  max-width: 605px;
+  margin: auto;
+  font-style: italic;
+  font-size: 17px;
+  color: #888888;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.testimonials .testimonialsContent .imgBox {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.testimonials .testimonialsContent .imgBox img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.testimonials .testimonialsContent .imgBox img:hover {
+  border: 2px solid #ff2f8b;
+}
+
+/*end testimonials section*/
+/*start blog section*/
+.blog {
+  padding-bottom: 90px;
+}
+.blog .contanier .blogContent {
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.blog .contanier .blogContent .blogTitle {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.blog .contanier .blogContent .blogTitle p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.blog .contanier .blogContent .blogTitle h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.blog .contanier .blogContent .blogTitle span {
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+  background: #dddddd;
+}
+.blog .contanier .row {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.blog .contanier .row .box {
+  width: 34%;
+  position: relative;
+  padding: 20px 20px 40px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  transition: all 0.3s ease 0s;
+}
+.blog .contanier .row .box:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.2);
+}
+.blog .contanier .row .box .icon {
+  display: flex;
+  gap: 5px;
+  color: #777777;
+  padding: 25px 25px 25px 0;
+  cursor: pointer;
+}
+.blog .contanier .row .box .icon p {
+  font-size: 13px;
+  margin-right: 20px;
+}
+.blog .contanier .row .box h4 {
+  color: #000000;
+  font-size: 21px;
+  transition: all 0.3s ease 0s;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.2;
+}
+.blog .contanier .row .box h4:hover {
+  color: #ff2f8b;
+}
+.blog .contanier .row .box p {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+
+/*end blog section*/
+/*start media*/
+@media (max-width: 992px) {
+  /*start home section*/
+  .home {
+    margin-top: 0;
+    min-height: 650px;
+    max-width: 100% !important;
+  }
+  .home .contanier .homeContent .infoContent h2 {
+    font-size: 80px;
+  }
+  /*end home*/
+  /*start packages section*/
+  .packages {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .packages .contanier .packagesContent {
+    text-align: center;
+  }
+  .packages .contanier .packagesContent .packagesInfo {
+    margin-bottom: 40px;
+  }
+  .packages .contanier .packagesContent .packagesInfo h1 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+  .packages .contanier .box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    max-width: 100%;
+  }
+  .packages .contanier .box .box1 {
+    flex: 1 1;
+    max-width: 45%;
+  }
+  /*end packages section*/
+  /*start adventure section*/
+  .adventure {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .adventure .contanier .adventureContent .infoContent h2 {
+    font-size: 36px;
+  }
+  .adventure .contanier .adventureContent .imgContent img {
+    display: none;
+  }
+  /*end adventure section*/
+  /*start trip section*/
+  .trip {
+    padding-bottom: 60px;
+    padding-top: 80px;
+  }
+  .trip .contanier .tripContent {
+    text-align: center;
+  }
+  .trip .contanier .tripContent .infoContent {
+    margin-bottom: 40px;
+  }
+  .trip .contanier .tripContent .infoContent h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .trip .contanier .box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  .trip .contanier .box .box1 {
+    flex: 1 1;
+    max-width: 45%;
+  }
+  /*end trip section*/
+  /*start places sectio*/
+  .places {
+    padding-bottom: 80px;
+  }
+  .places .contanier .placesContent .placesInfo {
+    margin-bottom: 40px;
+  }
+  .places .contanier .placesContent .placesInfo h2 {
+    font-size: 30px;
+  }
+  .places .contanier .cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .places .contanier .cardBox .card .imgBox img {
+    max-width: 100%;
+  }
+  /*end places section*/
+  /*start team section*/
+  .team {
+    padding-bottom: 60px;
+  }
+  .team .contanier .teamContent .teamInfo {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  .team .contanier .teamContent .teamInfo h2 {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .team .contanier .cardBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .team .contanier .cardBox .box {
+    flex: 2 2 45%;
+    max-width: 50%;
+  }
+  .team .contanier .cardBox .box img {
+    flex: 0 0 45%;
+    max-width: 100%;
+    height: 100%;
+  }
+  /*end team section*/
+  /*start subscribe section*/
+  .subscribe {
+    max-width: 100%;
+    text-align: center;
+    background-position: right;
+  }
+  .subscribe .contanier .subscribeContent {
+    max-width: 100%;
+  }
+  .subscribe .contanier .subscribeContent .subscribeImg img {
+    display: none;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 auto !important;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo h2 {
+    font-size: 36px;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo .formContent form {
+    text-align: center;
+  }
+  /*end subscribe section*/
+  /*start testimonials*/
+  .testimonials {
+    padding: 80px 0;
+  }
+  /*end testimonials section*/
+  /*start blog section*/
+  .blog {
+    padding-bottom: 50px;
+  }
+  .blog .contanier {
+    max-width: 960px;
+  }
+  .blog .contanier .blogContent {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog .contanier .blogContent .blogTitle {
+    margin-bottom: 40px;
+  }
+  .blog .contanier .blogContent .blogTitle h2 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  .blog .contanier .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  .blog .contanier .row .box {
+    flex: 1 1;
+    max-width: 50%;
+  }
+  /*end blog section*/
+}
+/*end media*/
+/*start media 768px*/
+@media (max-width: 768px) {
+  /*start home */
+  .home {
+    margin-top: 0;
+    width: 100% !important;
+  }
+  .home .contanier .homeContent .infoContent h2 {
+    font-size: 80px;
+  }
+  /*end home*/
+  /*start packages*/
+  .packages {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .packages .contanier .packagesContent {
+    text-align: center;
+  }
+  .packages .contanier .packagesContent .packagesInfo {
+    margin-bottom: 40px;
+  }
+  .packages .contanier .packagesContent .packagesInfo h1 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 25px;
+  }
+  .packages .contanier .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    max-width: 100%;
+  }
+  .packages .contanier .box .box1 {
+    flex: 1 1;
+    max-width: 100%;
+  }
+  /*end packages*/
+  /*start adventure*/
+  .adventure {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .adventure .contanier .adventureContent .infoContent h2 {
+    font-size: 36px;
+  }
+  .adventure .contanier .adventureContent .imgContent img {
+    display: none;
+  }
+  /*end adventure*/
+  /*start trip*/
+  .trip {
+    padding-bottom: 60px;
+    padding-top: 80px;
+  }
+  .trip .contanier .tripContent {
+    text-align: center;
+  }
+  .trip .contanier .tripContent .infoContent {
+    margin-bottom: 40px;
+  }
+  .trip .contanier .tripContent .infoContent h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .trip .contanier .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trip .contanier .box .box1 {
+    max-width: 100%;
+    width: 100% !important;
+  }
+  .trip .contanier .box .box1 img {
+    width: 90% !important;
+  }
+  /*end trip*/
+  /*start places*/
+  .places {
+    padding-bottom: 80px;
+  }
+  .places .contanier .placesContent .placesInfo {
+    margin-bottom: 40px;
+  }
+  .places .contanier .placesContent .placesInfo h2 {
+    font-size: 30px;
+  }
+  .places .contanier .cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .places .contanier .cardBox .card .imgBox img {
+    max-width: 100%;
+  }
+  /*end places*/
+  /*start team*/
+  .team {
+    padding-bottom: 60px;
+  }
+  .team .contanier .teamContent .teamInfo {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  .team .contanier .teamContent .teamInfo h2 {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .team .contanier .cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .team .contanier .cardBox .box {
+    flex: 2 2 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .team .contanier .cardBox .box img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /*end team*/
+  /*start subcribe*/
+  .subscribe {
+    max-width: 100%;
+    text-align: center;
+    background-position: right;
+  }
+  .subscribe .contanier .subscribeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe .contanier .subscribeContent .subscribeImg img {
+    display: none;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo h2 {
+    font-size: 36px;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo .formContent form {
+    text-align: center;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo .formContent form input {
+    min-width: 250px !important;
+  }
+  /*end subscribe*/
+  /*start testimonials*/
+  .testimonials {
+    padding: 80px 0;
+  }
+  /*end testimonials section*/
+  /*start blog section*/
+  .blog {
+    padding-bottom: 50px;
+  }
+  .blog .contanier {
+    max-width: 960px;
+  }
+  .blog .contanier .blogContent {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog .contanier .blogContent .blogTitle {
+    margin-bottom: 40px;
+  }
+  .blog .contanier .blogContent .blogTitle h2 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  .blog .contanier .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .blog .contanier .row .box {
+    flex: 1 1;
+    max-width: 100%;
+  }
+  .blog .contanier .row .box img {
+    width: 98%;
+  }
+  /*end blog section*/
+}
+/*end media 768px*/
+/*start 576px*/
+@media (max-width: 576px) {
+  /*start home */
+  .home {
+    margin-top: 0;
+    width: 100% !important;
+  }
+  .home .contanier .homeContent .infoContent h2 {
+    font-size: 80px;
+  }
+  /*end home*/
+  /*start packages*/
+  .packages {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .packages .contanier .packagesContent {
+    text-align: center;
+  }
+  .packages .contanier .packagesContent .packagesInfo {
+    margin-bottom: 40px;
+  }
+  .packages .contanier .packagesContent .packagesInfo h1 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 25px;
+  }
+  .packages .contanier .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    max-width: 100%;
+  }
+  .packages .contanier .box .box1 {
+    flex: 1 1;
+    max-width: 100%;
+  }
+  /*end packages*/
+  /*start adventure*/
+  .adventure {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .adventure .contanier .adventureContent .infoContent {
+    width: 100%;
+  }
+  .adventure .contanier .adventureContent .infoContent h2 {
+    font-size: 36px;
+  }
+  .adventure .contanier .adventureContent .imgContent img {
+    display: none;
+  }
+  /*end adventure*/
+  /*start trip*/
+  .trip {
+    padding-bottom: 60px;
+    padding-top: 80px;
+  }
+  .trip .contanier .tripContent {
+    text-align: center;
+  }
+  .trip .contanier .tripContent .infoContent {
+    margin-bottom: 40px;
+  }
+  .trip .contanier .tripContent .infoContent h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .trip .contanier .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trip .contanier .box .box1 {
+    max-width: 100% !important;
+    width: 90%;
+  }
+  .trip .contanier .box .box1 img {
+    width: 90% !important;
+  }
+  /*end trip*/
+  /*start places*/
+  .places {
+    padding-bottom: 80px;
+  }
+  .places .contanier .placesContent .placesInfo {
+    margin-bottom: 40px;
+  }
+  .places .contanier .placesContent .placesInfo h2 {
+    font-size: 30px;
+  }
+  .places .contanier .cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .places .contanier .cardBox .card .imgBox img {
+    max-width: 100%;
+  }
+  /*end places*/
+  /*start team*/
+  .team {
+    padding-bottom: 60px;
+  }
+  .team .contanier .teamContent .teamInfo {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  .team .contanier .teamContent .teamInfo h2 {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .team .contanier .cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .team .contanier .cardBox .box {
+    flex: 2 2 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .team .contanier .cardBox .box img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  /*end team*/
+  /*start subcribe*/
+  .subscribe {
+    max-width: 100%;
+    text-align: center;
+    background-position: right;
+  }
+  .subscribe .contanier .subscribeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe .contanier .subscribeContent .subscribeImg img {
+    display: none;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo h2 {
+    font-size: 36px;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo .formContent form {
+    text-align: center;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo .formContent form input {
+    min-width: 250px !important;
+  }
+  .subscribe .contanier .subscribeContent .subscribeInfo .formContent form button {
+    right: -20% !important;
+  }
+  /*end subscribe*/
+  /*start testimonials*/
+  .testimonials {
+    padding: 80px 0;
+  }
+  /*end testimonials section*/
+  /*start blog section*/
+  .blog {
+    padding-bottom: 50px;
+  }
+  .blog .contanier {
+    max-width: 960px;
+  }
+  .blog .contanier .blogContent {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog .contanier .blogContent .blogTitle {
+    margin-bottom: 40px;
+  }
+  .blog .contanier .blogContent .blogTitle h2 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  .blog .contanier .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .blog .contanier .row .box {
+    flex: 1 1;
+    max-width: 100%;
+    width: 100%;
+  }
+  .blog .contanier .row .box img {
+    width: 100%;
+  }
+  /*end blog section*/
+}
+/*end 576px*/
+/*start footer*/
+.footer {
+  width: 100%;
+  background-color: #04091e;
+  display: block;
+}
+.footer .contanier .footerContent {
+  padding-bottom: 80px;
+  padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .contanier .footerContent .aboutAgency {
+  width: 25%;
+}
+.footer .contanier .footerContent .aboutAgency h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+.footer .contanier .footerContent .aboutAgency p {
+  color: #999999;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.footer .contanier .footerContent .row {
+  max-width: 17%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer .contanier .footerContent .row .navlinks {
+  text-align: left;
+}
+.footer .contanier .footerContent .row .navlinks h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+.footer .contanier .footerContent .row .navlinks .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links {
+  max-width: 41%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links .list {
+  margin: 0px;
+  padding: 0px;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links .list .item a {
+  line-height: 25px;
+  display: inline-block;
+  color: #999999;
+  transition: all 0.3s linear;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links .list .item a:hover {
+  color: #ff2f8b;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links2 {
+  max-width: 41%;
+  padding-right: 20px;
+  padding-left: 15px;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links2 .list2 {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links2 .list2 .item2 a {
+  line-height: 25px;
+  display: inline-block;
+  color: #999999;
+  transition: all 0.3s linear;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.footer .contanier .footerContent .row .navlinks .navigation .links2 .list2 .item2 a:hover {
+  color: #ff2f8b;
+}
+.footer .contanier .footerContent .newslatter {
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer .contanier .footerContent .newslatter .newslattertitle h4 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+.footer .contanier .footerContent .newslatter .newslattertitle p {
+  color: #999999;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.footer .contanier .footerContent .newslatter .newsletterform {
+  display: flex;
+}
+.footer .contanier .footerContent .newslatter .newsletterform form {
+  width: 100%;
+  display: inline-block;
+}
+.footer .contanier .footerContent .newslatter .newsletterform form input {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #333333;
+  width: 80%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-weight: 300;
+  background: transparent;
+  color: #ffffff;
+  padding-left: 20px;
+  border-radius: 0;
+  font-size: 14px;
+}
+.footer .contanier .footerContent .newslatter .newsletterform form button {
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 5px 12px;
+  border: 0;
+  background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: auto;
+}
+.footer .contanier .footerContent .feeds {
+  max-width: 30%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer .contanier .footerContent .feeds .instagramfeeds h4 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.footer .contanier .footerContent .feeds .instagramfeeds .feed {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+}
+.footer .contanier .footerContent .feeds .instagramfeeds .feed li img {
+  margin: 5px;
+  vertical-align: middle;
+}
+.footer .copyright {
+  width: 100%;
+  background: #04091e;
+  padding: 18px 0;
+  border-top: 1px solid #333333;
+}
+.footer .copyright .contanier .copyrightBox {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .copyright .contanier .copyrightBox .copyrightitle {
+  max-width: 55%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer .copyright .contanier .copyrightBox .copyrightitle p {
+  margin: 0;
+  color: #999999;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.footer .copyright .contanier .copyrightBox .copyrightitle p a {
+  color: #ff2f8b;
+  transition: all 0.3s ease-in-out;
+}
+.footer .copyright .contanier .copyrightBox .socialIcon {
+  text-align: right;
+  max-width: 45%;
+}
+.footer .copyright .contanier .copyrightBox .socialIcon .icons {
+  text-align: right;
+}
+.footer .copyright .contanier .copyrightBox .socialIcon .icons a {
+  padding-right: 15px;
+  transition: all 0.3s ease-in-out;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #999;
+}
+.footer .copyright .contanier .copyrightBox .socialIcon .icons a:hover i {
+  color: #ff2f8b;
+}
+
+/*end footer*/
+/*start media*/
+@media (max-width: 992px) {
+  .footer {
+    max-width: 100%;
+    padding-bottom: 80px;
+  }
+  .footer .contanier .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  .footer .contanier .footerContent .colmd {
+    flex: 2 2 45%;
+    max-width: 40%;
+  }
+  .footer .copyright .contanier .copyrightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .footer .copyright .contanier .copyrightBox .colmd {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/*end media*/
+/*start 768px media*/
+@media (max-width: 768px) {
+  .footer {
+    max-width: 100%;
+    padding-bottom: 80px;
+  }
+  .footer .contanier .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  .footer .contanier .footerContent .colmd {
+    flex: 2 2 45%;
+    max-width: 100%;
+  }
+  .footer .copyright .contanier .copyrightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .footer .copyright .contanier .copyrightBox .colmd {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/*end 768px media*/
+/*start 576px media*/
+@media (max-width: 576px) {
+  .footer {
+    max-width: 100%;
+    padding-bottom: 80px;
+  }
+  .footer .contanier .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  .footer .contanier .footerContent .colmd {
+    flex: 2 2 45%;
+    max-width: 100%;
+  }
+  .footer .copyright .contanier .copyrightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .footer .copyright .contanier .copyrightBox .colmd {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/*end 576px media*/
+/*start contact section*/
+.contact {
+  background-image: url(../images/PackagesPage/bg.sun.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 450px;
+  display: inline-block;
+}
+.contact .contanier .content {
+  text-align: left;
+  margin-top: 15%;
+}
+.contact .contanier .content .links .lnk {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+.contact .contanier .content .links .lnk:hover {
+  color: #ff2f8b;
+  transition: 0.3s all ease-in-out;
+}
+.contact .contanier .content .links .lnk::before {
+  content: "|";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact .contanier .content .links .contactus {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+.contact .contanier .content .links .contactus:hover {
+  color: #ff2f8b;
+  transition: 0.3s all ease-in-out;
+}
+.contact .contanier .content h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+/*end contact section*/
+/*start map section*/
+.map {
+  padding-top: 120px;
+}
+.map .contanier .contactContent .mapContent iframe {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.map .contanier .contactContent .boxAbout {
+  display: flex;
+}
+.map .contanier .contactContent .boxAbout .infoBox {
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.map .contanier .contactContent .boxAbout .infoBox .homeContact {
+  position: relative;
+  padding-left: 45px;
+}
+.map .contanier .contactContent .boxAbout .infoBox .homeContact i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ff2f8b;
+  font-weight: 600;
+}
+.map .contanier .contactContent .boxAbout .infoBox .homeContact h2 {
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #000000;
+}
+.map .contanier .contactContent .boxAbout .infoBox .homeContact p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.map .contanier .contactContent .boxAbout .infoBox .phoneContact {
+  position: relative;
+  padding-left: 45px;
+}
+.map .contanier .contactContent .boxAbout .infoBox .phoneContact i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ff2f8b;
+  font-weight: 600;
+}
+.map .contanier .contactContent .boxAbout .infoBox .phoneContact a {
+  color: #000000;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.map .contanier .contactContent .boxAbout .infoBox .phoneContact p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.map .contanier .contactContent .boxAbout .infoBox .mailContact {
+  position: relative;
+  padding-left: 45px;
+}
+.map .contanier .contactContent .boxAbout .infoBox .mailContact i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ff2f8b;
+  font-weight: 600;
+}
+.map .contanier .contactContent .boxAbout .infoBox .mailContact a {
+  color: #000000;
+  font-size: 19px;
+  line-height: 24px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.map .contanier .contactContent .boxAbout .infoBox .mailContact p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.map .contanier .contactContent .boxAbout form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.map .contanier .contactContent .boxAbout form .formBox {
+  width: 50%;
+  display: flex;
+}
+.map .contanier .contactContent .boxAbout form .formBox .formInfo {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.map .contanier .contactContent .boxAbout form .formBox .formInfo input {
+  font-size: 13px;
+  line-height: 26px;
+  color: #999;
+  border: 1px solid #777;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0px;
+  padding-left: 20px;
+  padding: 6px 12px;
+  width: 398px;
+  height: 38px;
+  background-color: #fff;
+  background-clip: padding-box;
+  margin-bottom: 15px;
+}
+.map .contanier .contactContent .boxAbout form .formBox .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+.map .contanier .contactContent .boxAbout form .formBox .row .formtext textarea {
+  width: 410px;
+  height: 142px;
+  border: 1px solid #777;
+  outline: none;
+}
+.map .contanier .contactContent .boxAbout form .formBox .row .formBtn {
+  text-align: right;
+  padding-left: 15px;
+}
+.map .contanier .contactContent .boxAbout form .formBox .row .formBtn button {
+  background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+  display: inline-block;
+  color: #fff;
+  border-radius: 0px;
+  border-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 160px;
+  height: 40px;
+  margin-top: 20px;
+}
+.map .contanier .contactContent .boxAbout form .formBox .row .formBtn button:hover {
+  background: #777;
+}
+
+/*end map section*/
+/*start media*/
+@media (max-width: 992px) {
+  .contact {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+  }
+  .contact .contanier .content {
+    width: 100%;
+    text-align: center;
+  }
+  .map {
+    padding: 80px 0;
+  }
+  .map .contanier .contactContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map .contanier .contactContent .mapContent {
+    width: 62%;
+  }
+  .map .contanier .contactContent .boxAbout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  .map .contanier .contactContent .boxAbout .colmd {
+    flex: 2 2 45%;
+  }
+}
+/*end media*/
+/*start trippackages section*/
+.trippackages {
+  background-image: url(../images/PackagesPage/bg.sun.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 450px;
+}
+.trippackages .contanier .packagesContent {
+  text-align: left;
+  margin-top: 15%;
+}
+.trippackages .contanier .packagesContent .packageslinks .linkhome {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 300;
+}
+.trippackages .contanier .packagesContent .packageslinks .linkhome:hover {
+  color: #ff2f8b;
+  transition: 0.3s all ease-in-out;
+}
+.trippackages .contanier .packagesContent .packageslinks .linkhome::before {
+  content: "|";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.trippackages .contanier .packagesContent .linkpck {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 20px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 300;
+}
+.trippackages .contanier .packagesContent .linkpck:hover {
+  color: #ff2f8b;
+}
+.trippackages .contanier h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+/*end trippackages section*/
+/*start trip section*/
+.trip {
+  padding-bottom: 90px;
+  padding-top: 120px;
+  display: block;
+}
+.trip .contanier .tripContent {
+  display: flex;
+  justify-content: center;
+}
+.trip .contanier .tripContent .infocontent {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.trip .contanier .tripContent .infocontent p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  letter-spacing: 1px;
+}
+.trip .contanier .tripContent .infocontent h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.trip .contanier .tripContent .infocontent span {
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background: #dddddd;
+}
+.trip .contanier .box {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.trip .contanier .box .box1 {
+  width: 34%;
+  position: relative;
+  padding: 20px 20px 40px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  transition: all 0.3s ease 0s;
+}
+.trip .contanier .box .box1:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.2);
+}
+.trip .contanier .box .box1:hover img {
+  transform: scale(1.1);
+}
+.trip .contanier .box .box1:hover .date {
+  background: linear-gradient(90deg, #fff098 0%, #f54e71 100%);
+  transition: 0.3s all ease-in-out;
+}
+.trip .contanier .box .box1 img {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  transition: all 0.3s ease 0s;
+  width: 300px;
+  height: 200px;
+}
+.trip .contanier .box .box1 .date {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  padding: 12px 11px;
+  text-align: center;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 13px;
+  transition: all 0.3s ease 0s;
+  background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+}
+.trip .contanier .box .box1 .time {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+}
+.trip .contanier .box .box1 .icon {
+  display: flex;
+}
+.trip .contanier .box .box1 .icon .locate {
+  text-transform: capitalize;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 14px;
+  color: #777777;
+  line-height: 24px;
+}
+.trip .contanier .box .box1 .icon .days {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 14px;
+  color: #777777;
+  line-height: 24px;
+}
+.trip .contanier .box .box1 h4 {
+  margin-bottom: 12px;
+  font-size: 21px;
+  transition: all 0.3s ease 0s;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+}
+.trip .contanier .box .box1 p {
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.trip .contanier .box .box1 a {
+  margin-top: 20px;
+  color: #000000;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.trip .contanier .box .box1 a:hover {
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.3s all ease-in-out;
+}
+
+/*end trip section*/
+/*start places section*/
+.places {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 120px;
+  display: block;
+}
+.places .placesContent {
+  display: flex;
+  justify-content: center;
+}
+.places .placesContent .placesInfo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.places .placesContent .placesInfo p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.places .placesContent .placesInfo h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+}
+.places .placesContent .placesInfo span {
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+  background-color: #dddddd;
+}
+.places .cardBox {
+  width: 100%;
+  display: flex;
+}
+.places .cardBox .card {
+  width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.places .cardBox .card:hover .imgBox::after {
+  opacity: 0.85;
+  visibility: visible;
+}
+.places .cardBox .card:hover .content {
+  transform: translateY(-50%);
+  opacity: 1;
+  visibility: visible;
+}
+.places .cardBox .card .imgBox {
+  width: 100%;
+  position: relative;
+}
+.places .cardBox .card .imgBox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.places .cardBox .card .imgBox img {
+  width: 100%;
+}
+.places .cardBox .card .content {
+  position: absolute;
+  bottom: 0;
+  max-width: 330px;
+  padding: 0px 10px;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  transform: translateY(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.places .cardBox .card .content .text {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.places .cardBox .card .content .info {
+  font-size: 21px;
+  color: #fff;
+}
+
+/*end places section*/
+/*start packages section*/
+.packages {
+  padding-bottom: 90px;
+  padding-top: 120px;
+}
+.packages .contanier .packagesContent {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.packages .contanier .packagesContent .packagesInfo {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.packages .contanier .packagesContent .packagesInfo p {
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+.packages .contanier .packagesContent .packagesInfo h1 {
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.packages .contanier .packagesContent .packagesInfo span {
+  display: inline-block;
+  height: 5px;
+  width: 100px;
+  background: #dddddd;
+}
+.packages .contanier .box {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  gap: 20px;
+}
+.packages .contanier .box .box1 {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.packages .contanier .box .box1:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.2);
+  transition: all 0.3s ease 0s;
+}
+.packages .contanier .box .box1 h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+}
+.packages .contanier .box .box1 p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #777777;
+}
+.packages .contanier .box .box1 a {
+  display: inline-block;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 40px;
+  background-color: transparent;
+}
+.packages .contanier .box .box1 a:hover {
+  background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 0.3s all ease-in-out;
+}
+.packages .contanier .box .box1 .img1 {
+  background-color: #f7f9fd;
+  padding: 40px;
+}
+
+/*end packages section*/
+/*start subscribe section*/
+.subscribe {
+  background-image: url(../images/homaPage/bg2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 120px 0;
+}
+.subscribe .contanier .subscribeContent {
+  display: flex;
+  align-items: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.subscribe .contanier .subscribeContent .subscribeImg {
+  max-width: 41.666667%;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.subscribe .contanier .subscribeContent .subscribeImg img {
+  max-width: 100%;
+  height: auto;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo {
+  max-width: 41.666667%;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 0 0 190px;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo p {
+  margin-bottom: 40px;
+  margin-top: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo .formContent form {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo .formContent form input {
+  background-color: #c251da;
+  border: 1px solid #c251da;
+  border-color: #c251da;
+  line-height: 60px;
+  height: 60px;
+  min-width: 390px;
+  padding: 0 20px;
+  font-size: 16px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.subscribe .contanier .subscribeContent .subscribeInfo .formContent form button {
+  position: absolute;
+  cursor: pointer;
+  padding: 0px 25px;
+  max-height: 40px;
+  line-height: 39px;
+  top: 10px;
+  border-radius: 0px;
+  right: -25px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*end subscribe section*/
+/*start media*/
+@media (max-width: 992px) {
+  /*start trippackages section*/
+  .trippackages {
+    width: 100%;
+    margin-top: 0;
+  }
+  .trippackages .contanier .packagesContent {
+    text-align: center;
+  }
+  /*end trippackages section*/
+  /*start trip section*/
+  .trip {
+    padding-bottom: 60px;
+    padding-top: 80px;
+  }
+  .trip .contanier .tripContent {
+    text-align: center;
+  }
+  .trip .contanier .tripContent .infoContent {
+    margin-bottom: 40px;
+  }
+  .trip .contanier .tripContent .infoContent h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+  .trip .contanier .box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+  .trip .contanier .box .box1 {
+    flex: 1 1;
+    max-width: 50%;
+  }
+  /*end trip section*/
+  /*start places sectio*/
+  .places {
+    padding-bottom: 80px;
+  }
+  .places .contanier .placesContent .placesInfo {
+    margin-bottom: 40px;
+  }
+  .places .contanier .placesContent .placesInfo h2 {
+    font-size: 30px;
+  }
+  .places .contanier .cardBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .places .contanier .cardBox .card {
+    width: 100%;
+  }
+  .places .contanier .cardBox .card .imgBox {
+    flex: 1 1 50%;
+    max-width: 25%;
+  }
+  /*end places section*/
+}
+/*end media*//*# sourceMappingURL=main.css.map */

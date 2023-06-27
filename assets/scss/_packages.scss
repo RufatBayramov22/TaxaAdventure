@@ -1,0 +1,615 @@
+/*start trippackages section*/
+.trippackages {
+  background-image: url(../images/PackagesPage/bg.sun.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 450px;
+  .contanier {
+    .packagesContent {
+      text-align: left;
+      margin-top: 15%;
+      .packageslinks {
+        .linkhome {
+          font-size: 12px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          margin-right: 20px;
+          position: relative;
+          text-transform: uppercase;
+          line-height: 24px;
+          font-weight: 300;
+          &:hover{
+            color: #ff2f8b;
+            transition: 0.3s all ease-in-out;
+          }
+          &::before {
+            content: "|";
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .linkpck {
+        font-size: 12px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        margin-right: 20px;
+        position: relative;
+        text-transform: uppercase;
+        line-height: 24px;
+        font-weight: 300;
+        &:hover{
+          color: #ff2f8b;
+        }
+      }
+    }
+    h2 {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 0px;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      line-height: 1.2;
+    }
+  }
+}
+
+/*end trippackages section*/
+
+/*start trip section*/
+
+.trip {
+  padding-bottom: 90px;
+  padding-top: 120px;
+  display: block;
+  .contanier {
+    .tripContent {
+      display: flex;
+      justify-content: center;
+      .infocontent {
+        text-align: center;
+        margin-bottom: 75px;
+        p {
+          display: inline-block;
+          font-weight: 400;
+          text-transform: uppercase;
+          background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+          color: transparent;
+          background-clip: text;
+          letter-spacing: 1px;
+        }
+        h2 {
+          font-size: 48px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          color: #000000;
+          line-height: 1.2;
+        }
+        span {
+          display: inline-block;
+          width: 100px;
+          height: 5px;
+          background: #dddddd;
+        }
+      }
+    }
+    .box {
+      display: flex;
+      gap: 40px;
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      .box1 {
+        width: 34%;
+        position: relative;
+        padding: 20px 20px 40px;
+        border: 1px solid #eeeeee;
+        margin-bottom: 30px;
+        transition: all 0.3s ease 0s;
+        &:hover {
+          border: 1px solid transparent;
+          box-shadow: 0px 5px 50px rgb(129 74 255 / 20%);
+          img {
+            transform: scale(1.1);
+          }
+          .date {
+            background: linear-gradient(90deg, #fff098 0%, #f54e71 100%);
+            transition: 0.3s all ease-in-out;
+          }
+        }
+        img {
+          display: flex;
+          justify-content: center;
+          margin-left: 20px;
+          transition: all 0.3s ease 0s;
+          width: 300px;
+          height: 200px;
+        }
+        .date {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          color: #fff;
+          padding: 12px 11px;
+          text-align: center;
+          margin-bottom: 0px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          font-size: 13px;
+          transition: all 0.3s ease 0s;
+          background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+        }
+        .time {
+          font-family: "Playfair Display", serif;
+          font-size: 32px;
+          text-align: center;
+          font-weight: 300;
+        }
+        .icon {
+          display: flex;
+          .locate {
+            text-transform: capitalize;
+            margin-right: 5px;
+            margin-top: 30px;
+            margin-bottom: 16px;
+            display: inline-block;
+            font-size: 14px;
+            color: #777777;
+            line-height: 24px;
+          }
+          .days {
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: 16px;
+            display: inline-block;
+            font-size: 14px;
+            color: #777777;
+            line-height: 24px;
+          }
+        }
+        h4 {
+          margin-bottom: 12px;
+          font-size: 21px;
+          transition: all 0.3s ease 0s;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          color: #000000;
+          text-align: left;
+        }
+        p {
+          margin-bottom: 16px;
+          line-height: 24px;
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          color: #777777;
+        }
+        a {
+          margin-top: 20px;
+          color: #000000;
+          display: inline-block;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+          outline: none;
+          text-align: center;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: all 0.3s ease 0s;
+          &:hover {
+            background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+            color: transparent;
+            background-clip: text;
+            transition: 0.3s all ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*end trip section*/
+
+/*start places section*/
+.places {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 120px;
+  display: block;
+
+  .placesContent {
+    display: flex;
+    justify-content: center;
+    .placesInfo {
+      text-align: center;
+      margin-bottom: 75px;
+      p {
+        display: inline-block;
+        font-weight: 400;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+        color: transparent;
+        background-clip: text;
+        margin: 0px;
+        letter-spacing: 1px;
+      }
+      h2 {
+        font-size: 48px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        color: #000000;
+      }
+      span {
+        display: inline-block;
+        height: 5px;
+        width: 100px;
+        background-color: #dddddd;
+      }
+    }
+  }
+
+  .cardBox {
+    width: 100%;
+    display: flex;
+    .card {
+      width: 25%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        .imgBox {
+          &::after {
+            opacity: 0.85;
+            visibility: visible;
+          }
+        }
+        .content {
+          transform: translateY(-50%);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .imgBox {
+        width: 100%;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease 0s;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        position: absolute;
+        bottom: 0;
+        max-width: 330px;
+        padding: 0px 10px;
+        transition: all 0.3s ease 0s;
+        text-align: center;
+        transform: translateY(50%);
+        opacity: 0;
+        visibility: hidden;
+        .text {
+          color: #fff;
+          margin-bottom: 10px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        .info {
+          font-size: 21px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+/*end places section*/
+
+/*start packages section*/
+.packages {
+  padding-bottom: 90px;
+  padding-top: 120px;
+  .contanier {
+    .packagesContent {
+      max-width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      .packagesInfo {
+        text-align: center;
+        margin-bottom: 75px;
+        p {
+          display: inline-block;
+          font-weight: 400;
+          text-transform: uppercase;
+          background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+          color: transparent;
+          background-clip: text;
+          margin: 0px;
+          letter-spacing: 1px;
+        }
+        h1 {
+          font-size: 48px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          color: #000000;
+          line-height: 1.2;
+        }
+        span {
+          display: inline-block;
+          height: 5px;
+          width: 100px;
+          background: #dddddd;
+        }
+      }
+    }
+    .box {
+      display: flex;
+      margin-right: -15px;
+      margin-left: -15px;
+      gap: 20px;
+      .box1 {
+        text-align: center;
+        padding: 40px 20px;
+        border: 1px solid #eeeeee;
+        margin-bottom: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          border: 1px solid transparent;
+          box-shadow: 0px 5px 50px rgb(129 74 255 / 20%);
+          transition: all 0.3s ease 0s;
+        }
+        h3 {
+          text-align: center;
+          font-size: 24px;
+          margin-bottom: 15px;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          color: #000000;
+          line-height: 1.2;
+        }
+        p {
+          margin-top: 0;
+          margin-bottom: 1rem;
+          text-align: center;
+          line-height: 24px;
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          color: #777777;
+        }
+        a {
+          display: inline-block;
+          color: #000000;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+          outline: none;
+          text-align: center;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: all 0.3s ease 0s;
+          margin-bottom: 40px;
+          background-color: transparent;
+          &:hover {
+            background-image: linear-gradient(to right, #ff2f8b, #9035f9);
+            color: transparent;
+            background-clip: text;
+            transition: 0.3s all ease-in-out;
+          }
+        }
+        .img1 {
+          background-color: #f7f9fd;
+          padding: 40px;
+        }
+      }
+    }
+  }
+}
+
+/*end packages section*/
+
+/*start subscribe section*/
+.subscribe {
+  background-image: url(../images/homaPage/bg2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 120px 0;
+
+  .contanier {
+    .subscribeContent {
+      display: flex;
+      align-items: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      .subscribeImg {
+        max-width: 41.666667%;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .subscribeInfo {
+        max-width: 41.666667%;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 0 0 190px;
+        h2 {
+          font-size: 48px;
+          color: #ffffff;
+          margin-bottom: 20px;
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          line-height: 1.2;
+          margin-top: 0;
+        }
+        p {
+          margin-bottom: 40px;
+          margin-top: 0;
+          line-height: 24px;
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+        }
+        .formContent {
+          form {
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            input {
+              background-color: #c251da;
+              border: 1px solid #c251da;
+              border-color: #c251da;
+              line-height: 60px;
+              height: 60px;
+              min-width: 390px;
+              padding: 0 20px;
+              font-size: 16px;
+              transition: border-color 0.15s ease-in-out,
+                box-shadow 0.15s ease-in-out;
+            }
+            button {
+              position: absolute;
+              cursor: pointer;
+              padding: 0px 25px;
+              max-height: 40px;
+              line-height: 39px;
+              top: 10px;
+              border-radius: 0px;
+              right: -25px;
+              font-weight: 500;
+              font-size: 12px;
+              text-transform: uppercase;
+              display: inline-block;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: middle;
+              border: 1px solid transparent;
+              transition: color 0.15s ease-in-out,
+                background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*end subscribe section*/
+
+
+/*start media*/
+  @media (max-width:992px){
+    /*start trippackages section*/
+    .trippackages{
+      width: 100%;
+      margin-top: 0;
+      .contanier{
+        .packagesContent{
+          text-align: center;
+        }
+      }
+    }
+    /*end trippackages section*/
+
+    
+  /*start trip section*/
+  .trip {
+    padding-bottom: 60px;
+    padding-top: 80px;
+    .contanier {
+      .tripContent {
+        text-align: center;
+        .infoContent {
+          margin-bottom: 40px;
+          h2 {
+            font-size: 30px;
+            margin-bottom: 5px;
+            margin-top: 0;
+          }
+        }
+      }
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+        .box1 {
+          flex: 1 1;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+
+  /*end trip section*/
+  /*start places sectio*/
+  .places {
+    padding-bottom: 80px;
+    .contanier {
+      .placesContent {
+        .placesInfo {
+          margin-bottom: 40px;
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+      .cardBox {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        .card {
+        width: 100%;
+          .imgBox {
+            flex: 1 1 50%;
+            max-width: 25%;
+          }
+        }
+      }
+    }
+  }
+
+  /*end places section*/
+
+  }
+
+/*end media*/
